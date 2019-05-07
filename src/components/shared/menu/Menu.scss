@@ -1,0 +1,27 @@
+.menu {
+    list-style: none;
+    background-color:teal;
+    padding: 22px;
+    border-radius: 5px;
+    margin-top: 0;
+}
+.menu .menu-item {
+    display: inline-block;
+}
+.menu .menu-brand {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15pt;
+    margin-right: 20px;
+}
+.menu .menu-item a {
+    text-decoration: none;  
+    cursor: pointer;
+    color: #fff;
+    padding: 30px;
+}
+.menu .menu-item a:hover {
+    background-color: darkslategrey;
+    border-radius: 5px;
+}

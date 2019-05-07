@@ -1,0 +1,33 @@
+$image-box-shadow-color: gray;
+
+.lista-fotos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista-fotos .lista-fotos-item {
+    display: inline-block;
+    vertical-align: top;
+}
+.filtro-pesquisa {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filtro-pesquisa input {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+.filtro-pesquisa-acoes {
+    display: inline-block;
+    margin-left: 10px;
+}
+.botao-acoes {
+    margin-right: 20px;
+}
+.image-box {
+    box-shadow: 5px 5px 5px $image-box-shadow-color;
+    border-radius: 5px;
+}

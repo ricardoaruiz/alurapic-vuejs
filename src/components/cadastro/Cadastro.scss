@@ -1,0 +1,33 @@
+$image-box-shadow-color: gray;
+$error-message-color: red;
+
+.centralizado {
+    text-align: center;
+}
+.controle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.controle label {
+    display: block;
+    font-weight: bold;
+}
+.controle label + input, .controle textarea {
+    width: 100%;
+    font-size: inherit;
+    border-radius: 5px
+}
+.centralizado {
+    text-align: center;
+}
+.espaco-btn {
+    margin-right: 20px;
+}
+.image-box {
+    box-shadow: 5px 5px 5px $image-box-shadow-color;
+    border-radius: 5px;
+    max-width: 400px;
+}
+.error-msg {
+    color: $error-message-color;
+}

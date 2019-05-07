@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="conteudo">
+
+    <!-- Menu da aplicação     -->
+    <meu-menu :rotas="this.routes"></meu-menu>
+
+    <!-- Paginas da aplicação -->
+    <transition name="paginas">
+      <router-view></router-view>
+    </transition>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { routes } from './routes';
+import Menu from './components/shared/menu/Menu.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'meu-menu' : Menu
+  },
+  data() {
+    return {
+      routes
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .conteudo {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .paginas-enter, .paginas-leave-active {
+      opacity: 0;
+  }
+  .paginas-enter-active, .paginas-leave-active {
+      transition: opacity .4s;
+  }    
 </style>

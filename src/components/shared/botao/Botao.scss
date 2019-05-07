@@ -1,0 +1,41 @@
+$btn-normal-color: royalblue;
+$btn-normal-color-hover: mediumblue;
+$btn-normal-color-disabled: lightskyblue;
+
+$btn-perigo-color: tomato;
+$btn-perigo-color-hover: red;
+$btn-perigo-color-disabled: lightsalmon;
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13pt;
+}
+.btn-normal {
+    border: solid 1px $btn-normal-color;
+    background-color: $btn-normal-color;
+}
+.btn-normal:hover {
+    border: solid 1px $btn-normal-color-hover;
+    background-color: $btn-normal-color-hover;
+}
+.btn-normal:disabled{
+    border: solid 1px $btn-normal-color-disabled;
+    background-color: $btn-normal-color-disabled;
+    cursor: not-allowed;
+}    
+.btn-perigo {
+    border: solid 1px $btn-perigo-color;
+    background-color: $btn-perigo-color;
+}
+.btn-perigo:hover {
+    border: solid 1px $btn-perigo-color-hover;
+    background-color: $btn-perigo-color-hover;
+}
+.btn-perigo:disabled{
+    border: solid 1px $btn-perigo-color-disabled;
+    background-color: $btn-perigo-color-disabled;
+    cursor: not-allowed;
+} 
