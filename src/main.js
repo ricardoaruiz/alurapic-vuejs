@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Config from '../Config';
+import Config from './Config';
 
 // Importando o arquivo de localização do vee-validate direto
 // da pasta node_modules
